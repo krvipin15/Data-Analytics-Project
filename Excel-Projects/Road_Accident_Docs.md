@@ -1,5 +1,7 @@
 # Visualizing Road Accident Data for Safer Roads
 
+![Image](https://media.istockphoto.com/id/1349610019/vector/car-accident-with-drivers-man-and-woman-vector-illustration.jpg?s=612x612&w=0&k=20&c=w111hIV0cUSdQX70XyGnvJdOnterFwe8PWqI18cfT1I=)
+
 **Project Overview:**
 
 This data analysis project aims to create an Excel dashboard using the "Road Accident Dataset" sourced from Kaggle. The project involves five main steps: Data Cleaning, Data Processing, Data Analysis, Data Visualization, and creating the final Dashboard. 
