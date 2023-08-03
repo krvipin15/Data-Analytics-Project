@@ -1,19 +1,9 @@
 # Visualizing Road Accident Data for Safer Roads
 
-**Road Accident Dashboard:**
-
-![Dashboard]()
-
 **Project Overview:**
 
 This data analysis project aims to create an Excel dashboard using the "Road Accident Dataset" sourced from Kaggle. The project involves five main steps: Data Cleaning, Data Processing, Data Analysis, Data Visualization, and creating the final Dashboard. 
 The objective is to provide insights into road accidents for the years 2021 and 2022, focusing on various key performance indicators (KPIs) and their relationships with different factors.
-
-**Data Description:**
-
-- Dataset Source: Kaggle
-- Dataset Name: Road Accident Dataset
-- Data Size: 3.07 Million rows and 21 columns
 
 **Stakeholders:**
 
@@ -27,9 +17,15 @@ The objective is to provide insights into road accidents for the years 2021 and 
 - Public
 - Media
 
+**Data Description:**
+
+- Dataset Source: Kaggle
+- Dataset Name: Road Accident Dataset
+- Data Size: 3.07 Million rows and 21 columns
+
 **Key Performance Indicators (KPIs):**
 
-![Data Analysis Sheet]()
+![Data Analysis Sheet](https://github.com/krvipin15/Data-Analytics-Project/blob/main/Images/Road_Accident_Analysis_img.png)
 
 1. Primary KPI - Total Casualties after the accident: This KPI will provide an overview of the total number of casualties that occurred after each road accident.
 
@@ -46,6 +42,11 @@ The objective is to provide insights into road accidents for the years 2021 and 
 6. Distribution of total casualties by Road Surface: This KPI will showcase the distribution of total casualties based on different road surface conditions.
 
 7. Relation between Casualties by Area/Location & by Day/Night: This KPI will analyze the relationship between casualties and factors like area/location and day/night conditions.
+
+
+**Road Accident Dashboard:**
+
+![Dashboard](https://github.com/krvipin15/Data-Analytics-Project/blob/main/Images/Road_Accident_Dashboard_img.png)
 
 **Conclusion:**
 
