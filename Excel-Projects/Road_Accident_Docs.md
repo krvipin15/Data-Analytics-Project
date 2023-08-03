@@ -45,6 +45,37 @@ The objective is to provide insights into road accidents for the years 2021 and 
 
 7. Relation between Casualties by Area/Location & by Day/Night: This KPI will analyze the relationship between casualties and factors like area/location and day/night conditions.
 
+Here's a summarized version of the steps to create the Road Accident Dashboard:
+
+**Steps to create the Road Accident Dashboard:**
+
+1. Data Cleaning:
++ Adjust the first column for text underneath.
++ Apply filters to remove blanks, nulls, and duplicates in the primary key column.
++ Check for spelling mistakes using filters.
++ Handle blank values in specific columns.
+
+2. Data Processing:
++ Add new columns for Month and Year.
++ Use formulas to extract month and year from the Accident Date column.
+
+3. Data Analysis:
++ Create a Pivot Table to calculate Total Casualties by Accident Severity.
++ Calculate percentages of Total Casualties for each Accident Severity.
++ Create a donut chart to visualize the distribution of casualties by Accident Severity.
++ Use a Timeline filter to analyze data based on date.
+
+4. Secondary KPIs:
++ Create a Pivot Table to calculate Total Casualties by Vehicle Type.
++ Use calculated items to combine different vehicle types.
++ Create a table for Car Casualties.
+
+5. Data Visualization (Dashboard):
++ Create a new sheet named "Dashboard"
++ Customize the appearance by removing gridlines and adding background colors.
++ Use shapes and text boxes to create the layout of the dashboard.
++ Copy and paste charts and tables from other sheets to the dashboard.
++ Format the dashboard elements for better visualization.
 
 **Road Accident Dashboard:**
 
