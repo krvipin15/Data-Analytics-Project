@@ -6,10 +6,10 @@ import streamlit as st
 import yfinance as yf
 import datetime as dt
 
-# Configuring web application page
+# Configuring web application
 st.set_page_config(page_title= "Market Insight Analysis", page_icon= "chart_with_upwards_trend", layout = 'wide')
 
-# Adding page title
+# Adding page title to web application
 st.title("Capital Asset Pricing Model")
 
 # Displaying inputs in single row on web application
@@ -25,7 +25,7 @@ with col2:
 	# This section enables the user to choose the specific years of data to utilize for the CAPM calculation
 	years = st.number_input("Number of years", 1, 10)
 
-# Define the start and end dates
+# Define the start and end dates which will be used to get past 10 years of data from today's date
 start_date = dt.date(dt.date.today().year - years, dt.date.today().month, dt.date.today().day)
 end_date = dt.date.today()
 
@@ -33,14 +33,14 @@ try:
 	# Fetching NIFTY 50 data from Yahoo Finance and storing as Series
 	nifty50_data = yf.download('^NSEI', start=start_date, end=end_date)
 
-	# Reset index to get Date as column
+	# Reset index to get 'Date' as column
 	nifty50_data.reset_index(inplace=True)
 
-	# Get Date and Close columns only
+	# Get 'Date' and 'Close' columns only
 	data1= nifty50_data[['Date', 'Close']]
 	nifty50 = data1.copy()
 
-	# Changing name of Close to nifty50
+	# Changing name of 'Close' column to 'Nifty50'
 	nifty50.rename(columns={'Close': 'Nifty50'}, inplace=True)
 
 	# Fetching close price data for selected stocks and storing as DataFrame
@@ -49,10 +49,10 @@ try:
 		stocks_data = yf.download(stock, period=f'{years}y')
 		stock_df[f'{stock}'] = stocks_data['Close']
 
-	# Reset index for stocksDf
+	# Reset index for stocksDf to get 'Date' as Column
 	stock_df.reset_index(inplace=True)
 
-	# Merging stocks_df and SP500 data together
+	# Merging stocks_df and SP500 data together to get final dataframe for analysis 
 	stocks_df = pd.merge(stock_df, nifty50, on='Date', how='inner')
 
 	# Displaying stocks data on web application 
@@ -172,11 +172,11 @@ try:
 
 	col9, col10 = st.columns([1, 1])
 	with col9:
-		st.markdown("### Daily Returns Over Time")
+		st.markdown("### Daily Return Trends")
 		stock_lst = st.selectbox("Choose a stock", (stock_list))
 		st.plotly_chart(plot2(daily_return.iloc[:, :-1], stock_lst), use_container_width=True)
 	with col10:
-		st.markdown("### Market Returns Volatility")
+		st.markdown("### Market Return Trends")
 		st.plotly_chart(plot3(daily_return), use_container_width=True)
 
 	col11, col12 = st.columns([1, 1])
