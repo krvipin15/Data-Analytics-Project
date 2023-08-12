@@ -156,14 +156,16 @@ try:
 
 	# Function to plot bar chart for daily returns for different stocks
 	def plot2(df, col):
-		fig2 = px.bar(df, x=df['Date'], y=df[col])
+		color ='#0072BB'
+		fig2 = px.bar(df, x=df['Date'], y=df[col], color_discrete_sequence=[color])
 		fig2.update_layout(width=700, margin=dict(l=20, r=20, t=50, b=20), xaxis_title='', yaxis_title='')
 		
 		return fig2
 
 	# Function to plot bar chart for market return for NIFTY50
 	def plot3(df):
-		fig3 = px.bar(df, x=df['Date'], y=df['Nifty50'])
+		color = '#004B8D'
+		fig3 = px.bar(df, x=df['Date'], y=df['Nifty50'], color_discrete_sequence=[color])
 		fig3.update_layout(height=500, width=700, margin=dict(l=20, r=20, t=50, b=20), xaxis_title='', yaxis_title='')
 
 		return fig3	
@@ -194,7 +196,8 @@ try:
 
 	# Function to plot Bar chart for expected returns of different stocks
 	def plot5(df):
-		fig5 = px.bar(x=df['Stocks'], y=df['Expected Return (in %)'])
+		color = '#1f77b4'  # A shade of blue
+		fig5 = px.bar(x=df['Stocks'], y=df['Expected Return (in %)'], color_discrete_sequence=[color])
 		fig5.update_layout(width=700, xaxis_title='', yaxis_title='')
 
 		return fig5
