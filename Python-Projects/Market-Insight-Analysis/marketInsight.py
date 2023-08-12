@@ -124,16 +124,16 @@ try:
 	    beta = covariance / market_variance
 	    beta_value[column] = beta
 
-	# Calculating Expected Return of the Market (rm)
-	expected_market_return = market_return.mean() * 252
+	# Calculating market portfolio return (rm)
+	market_portfolio_return = market_return.mean() * 252
 
 	# Considering Risk-Free Rate of Return (rf) as 0
-	risk_free_rate = 0
+	risk_free_rate = 0.068
 
 	# Calculate Expected Return (ri) using CAPM
 	expected_return = {}
 	for stock, beta in beta_value.items():
-		expected_returns = risk_free_rate + beta * (expected_market_return - risk_free_rate)
+		expected_returns = risk_free_rate + beta * (market_portfolio_return - risk_free_rate)
 		expected_return[stock] = expected_returns
 
 	# Converting dict to dataframes
