@@ -26,6 +26,18 @@ By leveraging the capabilities of the hired data analyst, Bhavin Patel aims to u
 - Data & Analytics Team
 - Information Technology (IT) Department
 
+### Success Criteria:
+
+1. **Dashboard(s) Uncovering Sales Order Insights:** The created dashboard(s) should effectively uncover insightful sales order trends, metrics, and comparisons using the data available. The dashboard should provide a clear and comprehensive view of the company's sales performance, aiding in identifying patterns and trends.
+
+2. **Improved Decision-Making for Sales Team:** The success will be evident if the sales team is empowered to make better-informed decisions based on the insights derived from the dashboard(s). This should lead to optimized strategies and tactics that positively impact sales performance.
+
+3. **10% Cost Savings of Total Spend:** The success will be realized if the improved decision-making facilitated by the insights contributes to a measurable 10% reduction in costs from the total spending. This signifies the tangible impact of data-driven decisions on the company's financial efficiency.
+
+4. **20% Time Saving for Sales Analysts:** The project will be deemed successful if the automation of insights and data visualization significantly reduces the manual effort spent by sales analysts in data gathering. Achieving a 20% reduction in the time spent on data collection will indicate improved efficiency and resource allocation.
+
+5. **Value-Added Activity Reinvestment:** Success will be apparent if the time saved by sales analysts due to reduced manual data gathering is reinvested in activities that add value to the business, such as deeper analysis, strategy formulation, and proactive decision support.
+
 ### Actions Taken in the Project:
 
 **In PostgreSQL:**
@@ -101,4 +113,11 @@ By executing these SQL queries, valuable insights have been extracted from the d
 1. Created calculated fields for various indicators, profit, sales, and order changes, and their respective percentage changes.
 2. Utilized Level of Detail (LOD) expressions to calculate indicators based on the current and prior years.
 3. Built a dashboard using the calculated fields to display various insights.
-[![Regional Sales Overview](URL_TO_YOUR_IMAGE)](https://public.tableau.com/views/SalesOverview_16930746847990/RegionalSalesOverview?:language=en-US&:display_count=n&:origin=viz_share_link)
+
+**Regional Sales Dashboard -**
+
+[![Regional Sales Overview](https://github.com/krvipin15/Data-Analytics-Project/blob/384ed18f20f7270fe363cbc2550508647c826aaa/Tableau-Projects/Regional-Sales-Overview/Images/Regional%20Sales%20Overview.png)](https://public.tableau.com/views/SalesOverview_16930746847990/RegionalSalesOverview?:language=en-US&:display_count=n&:origin=viz_share_link)
+
+### Conclusion:
+
+The insights derived from PostgreSQL analysis and showcased through Tableau dashboards provide a solid foundation for Atliq Hardware to navigate the challenges of declining sales and formulate effective strategies for business growth. This project not only demonstrates the potential of data-driven decision-making but also underscores its pivotal role in modern business environments.
