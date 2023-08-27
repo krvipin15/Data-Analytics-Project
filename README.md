@@ -1,7 +1,7 @@
 # Data Analytic Projects
-![image](https://www.ishir.com/wp-content/uploads/2021/08/blog-banner-data-analytics-types.jpg)
+![image](https://learn.g2.com/hubfs/Imported%20sitepage%20images/1ZB5giUShe0gw9a6L69qAgsd7wKTQ60ZRoJC5Xq3BIXS517sL6i6mnkAN9khqnaIGzE6FASAusRr7w=w1439-h786.png)
 
-Data Analytics Repo: Dive into the world of insights with our collection of projects! Uncover patterns, trends, and make data-driven decisions.
+**Data Analytics Repo:** Dive into the world of insights with our collection of projects! Uncover patterns, trends, and make data-driven decisions.
 
 ## Excel Projects
 + **[Road Accident Insight](https://github.com/krvipin15/Data-Analytics-Project/blob/4c5b7a8353a5451094026df9aaa1c3f7b24e6391/Excel-Projects/Road-Accident-Analysis/Project_Documentation.md) -**
