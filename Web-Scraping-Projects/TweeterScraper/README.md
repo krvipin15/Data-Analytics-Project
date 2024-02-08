@@ -57,7 +57,7 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 
 ## License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License. See the [LICENSE file](https://github.com/krvipin15/Data-Analytics-Project/blob/main/Web-Scraping-Projects/TweeterScraper/LICENSE.md) for details.
 
 
 ## Acknowledgements
