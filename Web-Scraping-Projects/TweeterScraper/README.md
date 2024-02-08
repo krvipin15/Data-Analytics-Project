@@ -31,9 +31,9 @@ This repository contains the script for scraping data as well as a cleaning proc
 
 2. Install the required Python packages using `pip install -r requirements.txt`.
 
-3. Provide your Twitter username and password in the  `scrape(` of `TwitterScraper.py` script.
+3. Provide your Twitter username and password in the  `scrape()` of `TwitterScraper.py` script.
 
-4. Input the path where you want to save the scraped data in the `scrape()` of`TwitterScraper.py` script.
+4. Input the path where you want to save the scraped data in the `scrape()` of `TwitterScraper.py` script.
 
 5. Modify the `keywords` list in `keywords.py` script with the search terms you want to scrape Twitter data for.
 
