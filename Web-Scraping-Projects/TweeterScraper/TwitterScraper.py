@@ -100,29 +100,33 @@ def twitter_search(driver, search_term: str):
     Returns:
     bool
     """
-    driver.get('https://twitter.com/search')
-    print(f"Searching for tweets with the term {search_term}.")
-    sleep(5)
-
-    # Insert keyword into search box and start searching
-    search_input = driver.find_element(by=By.XPATH, value='//input[@data-testid="SearchBox_Search_Input"]')
-    search_input.send_keys(search_term)
-    search_input.send_keys(Keys.RETURN)
-    sleep(2)
-
-    # Change page to "Latest" instead of "Top"
-    change_page_sort("Latest", driver)
-
     try:
-        # If no result for a keyword, move to next keyword 
-        error_message = driver.find_element(by=By.XPATH, value='//div[@data-testid="empty_state_header_text"]')
-        if error_message.text.startswith("No results"):
-            print(f"No results found for {search_term}. \n")
-            return False
-    except exceptions.NoSuchElementException:
-        pass
+        driver.get('https://twitter.com/search')
+        print(f"Searching for tweets with the term {search_term}.")
+        sleep(5)
 
-    return True
+        # Insert keyword into search box and start searching
+        search_input = driver.find_element(by=By.XPATH, value='//input[@data-testid="SearchBox_Search_Input"]')
+        search_input.send_keys(search_term)
+        search_input.send_keys(Keys.RETURN)
+        sleep(2)
+
+        # Change page to "Latest" instead of "Top"
+        change_page_sort("Latest", driver)
+
+        try:
+            # If no result for a keyword, move to next keyword 
+            error_message = driver.find_element(by=By.XPATH, value='//div[@data-testid="empty_state_header_text"]')
+            if error_message.text.startswith("No results"):
+                print(f"No results found for {search_term}. \n")
+                return False
+        except exceptions.NoSuchElementException:
+            pass
+
+        return True
+    except:
+        driver.refresh()
+        scrape(search_term)
 
 
 def generate_tweet_id(tweet):
@@ -390,7 +394,6 @@ def scrape(search_terms: list):
         search_term = f'"#{search_term}" until:{until} since:{since}'
 
         result = twitter_search(driver, search_term)
-        driver.refresh()
         sleep(30)
         if not result:
             continue
