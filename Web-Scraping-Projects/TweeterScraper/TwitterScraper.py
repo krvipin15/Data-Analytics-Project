@@ -373,7 +373,7 @@ def scrape(search_terms: list):
     ddmm = curr_date.strftime('%d%m')
     
     try:
-        directory = f"tweet_{ddmm}"
+        directory = f"tweeter_{ddmm}"
         parent_dir = "C:/Users/vipin/Downloads/" # Enter the desired location to create a new folder
         path = os.path.join(parent_dir, directory)
         if not os.path.exists(path):
