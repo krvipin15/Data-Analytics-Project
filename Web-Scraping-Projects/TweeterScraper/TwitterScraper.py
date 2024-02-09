@@ -374,7 +374,7 @@ def scrape(search_terms: list):
     
     try:
         directory = f"tweeter_{ddmm}"
-        parent_dir = "C:/Users/vipin/Downloads/" # Enter the desired location to create a new folder
+        parent_dir = "C:/Users/admin/Downloads/" # Enter the desired location to create a new folder
         path = os.path.join(parent_dir, directory)
         if not os.path.exists(path):
             os.makedirs(path)
@@ -383,7 +383,7 @@ def scrape(search_terms: list):
 
     for search_term in search_terms:
         # Use login_x() to get or create a WebDriver instance
-        username, password = "knght2024", "aceknght"
+        username, password = "abc", "123"  # Enter your username and password
         driver = login_x(username=username, password=password)
 
         # Create filepath for every search_term
